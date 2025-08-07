@@ -1,0 +1,8 @@
+{
+  "item.ragemod.enderite_scrap": "Enderite Scrap",
+  "item.ragemod.enderite_ingot": "Enderite Ingot",
+  "item.ragemod.enderite_upgrade_template": "Enderite Smithing Template",
+
+  "block.ragemod.enderite_block": "Enderite Block",
+  "creativetab.ragemod.enderite": "Enderite"
+}

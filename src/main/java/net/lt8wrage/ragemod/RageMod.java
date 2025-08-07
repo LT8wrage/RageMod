@@ -1,5 +1,8 @@
 package net.lt8wrage.ragemod;
 
+import net.lt8wrage.ragemod.block.ModBlocks;
+import net.lt8wrage.ragemod.item.ModItems;
+import net.lt8wrage.ragemod.tabs.ModTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -41,6 +44,10 @@ public class RageMod {
 
         modEventBus.addListener(this::commonSetup);
 
+        ModTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         NeoForge.EVENT_BUS.register(this);
 
 
@@ -54,7 +61,6 @@ public class RageMod {
 
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
